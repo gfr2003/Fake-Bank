@@ -1,2 +1,10 @@
-<app-new-transfer (clickTransferir)="transferir($event)"></app-new-transfer>
-<app-extrato [transferencias]="transferencias"></app-extrato>
+<header>
+  <h3 class="title">Bytebank</h3>
+  <div class="buttons">
+    <a routerLink="extrato" routerLinkActive="ativo">Extrato</a>
+    <a routerLink="new-transfer" routerLinkActive="ativo">Nova Transferência</a>
+  </div>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

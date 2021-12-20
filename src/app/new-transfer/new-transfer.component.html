@@ -7,20 +7,23 @@
       <input
         class="form-field__input"
         id="valor"
-        type="text"
+        type="number"
         [(ngModel)]="valor"
         name="value"
+        mask="separator"
+        thousandSeparator="."
       />
     </div>
 
     <div class="form-field">
-      <label class="form-field__label" for="destino">Destino</label>
+      <label class="form-field__label" for="destino">Conta Destino</label>
       <input
         class="form-field__input"
         id="valor"
         type="text"
         [(ngModel)]="destino"
         name="destiny"
+        mask="00000-0"
       />
     </div>
     <div class="botao-wrapper">

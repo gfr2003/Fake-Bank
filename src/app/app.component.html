@@ -1,4 +1,2 @@
 <app-new-transfer (clickTransferir)="transferir($event)"></app-new-transfer>
-
-<p>Valor: {{ transferencia?.valor }}</p>
-<p>Destino: {{ transferencia?.destino }}</p>
+<app-extrato [transferencias]="transferencias"></app-extrato>
